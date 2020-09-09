@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Новая жизнь — сайт помощи онкобольным, вместе против рака молочной железы у женщин</title>
+  </head>
+  <body class="page page--fixed-header">
+    <%=require('html-loader?{"minimize":false,"attributes":{"list":[{"tag":"img","attribute":"data-src","type":"src"}]}}!./header.html')%>
+    <main>
+      <section class="promo-block promo-block--prize">
+        <div class="container container--promo">
+          <a href="#" class="wrapper wrapper--text promo-block__prema-link">
+            <h2 class="promo-block__title">Проект «Новая жизнь» — лауреат премии «Будем жить!»</h2>
+            <span class="promo-block__link">подробнее</span>
+          </a>
+          <picture class="promo-block__img">
+            <source media="(min-width: 768px)" srcset="img/nagrada_1x.png 1x, img/nagrada_2x.png 2x">
+            <img class="promo-block__img-prize" src="img/nagrada-mobile_1x.png" srcset="img/nagrada-mobile_2x.png 2x" alt="Примия «Будем жить!»">
+          </picture>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="news-main news-main--top">
+          <h2 class="visually-hidden">Полезные статьи, советы, истории</h2>
+          <a class="news news--big news--big-indent" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/news-women_1x.jpg 1x, img/news-women_2x.jpg 2x">
+              <img class="news__img news__img--big" src="img/news-women-mobile_1x.jpg" srcset="img/news-women-mobile_2x.jpg 2x" alt="Полезный совет от женщин">
+            </picture>
+            <div class="content content--index content--news content--news-top">
+              <h3 class="news__title news__title--big">Как жить после операции. С чего начать</h3>
+              <p class="news__category news__category--big">совет</p>
+            </div>
+          </a>
+
+          <a class="news news--middle news--middle-indent" href="#">
+            <div class="content content--index content--news content--news-top">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/news-abstraction_1x.png 1x, img/news-abstraction_2x.png 2x">
+                <img class="news__img news__img--middle" src="img/news-abstraction-mobile_1x.png" srcset="img/news-abstraction-mobile_2x.png 2x" alt="Полезный совет">
+              </picture>
+              <h3 class="news__title news__title--middle">Как жить после операции.<br> С чего начать</h3>
+              <p class="news__discription news__discription--middle">При терапии рака важно действовать быстро. Часто пациенты боятся, что бесплатные обследования придется долго ждать, и делают диагностику за деньги.</p>
+              <p class="news__category news__category--middle">совет</p>
+            </div>
+          </a>
+        </section>
+      </div>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="content content--index content--tablet container--newsletter">
+            <div class="newsletter__mailing">
+              <h2 class="newsletter__title">ПИСЬМА ОТ «НОВОЙ ЖИЗНИ»</h2>
+              <p class="newsletter__discription newsletter__discription--indent">Мы&nbsp;аккуратно собираем анонсы встреч, истории наших участниц, интервью, полезные материалы в&nbsp;рассылку и&nbsp;отправляем
+                ее&nbsp;один раз в&nbsp;две недели.</p>
+              <form class="form-mailing" action="#" method="post">
+                <input class="form-mailing__email form-mailing__email--indent error-mail" type="email" name="email" placeholder="ваш e-mail">
+                <button class="button-main button-main--indent button-main--newsletter" type="submit">подписаться</button>
+              </form>
+            </div>
+
+            <div class="newsletter__social">
+              <h2 class="newsletter__title">«новая жизнь» в соцсетях</h2>
+              <p class="newsletter__discription newsletter__discription--indent newsletter__discription--social">Каждой из&nbsp;нас важно чувствовать поддержку.
+                Подпишитесь на&nbsp;аккаунты &laquo;Новой Жизни&raquo;.
+                Возможно, вам или кому-то из&nbsp;знакомых наши статьи помогут.</p>
+              <div class="wrapper wrapper--social">
+              <a href="#" class="newsletter__link newsletter__link--indent">МЫ В инстаграме</a>
+              <a href="#" class="newsletter__link">КАНАЛ В яндекс.дзен</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="read-same">
+          <h2 class="read-same__title">Читайте также</h2>
+          <div class="content content--index content--tablet content--news">
+            <ul class="news-next__list">
+              <li class="news news--small news--small-next">
+                <a class="news__link wrapper wrapper--news-small" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/news-interview_1x.png 1x, img/news-interview_2x.png 2x">
+                    <img class="news__img news__img--small" src="img/news-interview-mobile_1x.png" srcset="img/news-interview-mobile_2x.png 2x" alt="Полезный совет">
+                  </picture>
+                  <h3 class="news__title news__title--small">Интервью врача&nbsp;-&nbsp;гинеколога Евгении Троик</h3>
+                  <p class="news__category news__category--small-next">интервью</p>
+                </a>
+              </li>
+
+              <li class="news news--small news--small-next">
+                <a class="news__link wrapper wrapper--news-small" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/news-small-book_1x.png, img/news-small-book_2x.png 2x">
+                    <img class="news__img news__img--small" src="img/news-small-book-mobile_1x.png" srcset="img/news-small-book-mobile_2x.png 2x" alt="Полезный совет">
+                  </picture>
+                  <h3 class="news__title news__title--small">Какие льготы положены онкобольным</h3>
+                  <p class="news__category news__category--small-next">юридическая помощь</p>
+                </a>
+              </li>
+
+              <li class="news news--small news--small-next">
+                <a class="news__link wrapper wrapper--news-small" href="#">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/news-promisan_1x.png, img/news-promisan_2x.png 2x">
+                    <img class="news__img news__img--small" src="img/news-promisan-mobile_1x.png" srcset="img/news-promisan-mobile_2x.png 2x" alt="Полезный совет">
+                  </picture>
+                  <h3 class="news__title news__title--small">Промиссан&nbsp;—уникальное негормональное средство для профилактики рака</h3>
+                  <p class="news__category news__category--small-next">интервью</p>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+      </div>
+
+    </main>
+    <%=require('html-loader?{"minimize":false,"attributes":{"list":[{"tag":"img","attribute":"data-src","type":"src"}]}}!./footer.html')%>
+  </body>
+</html>

@@ -30,9 +30,12 @@ const optimization = () => {
 
 module.exports = {
   mode: 'development',
-  entry: PATH.src + 'index.js',
+  entry: {
+    index: PATH.src + 'index.js',
+    inner: PATH.src + 'inner.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.join(__dirname, PATH.build)
   },
   devtool: isDev ? 'source-map' : '',
@@ -45,13 +48,22 @@ module.exports = {
   optimization: optimization(),
   plugins: [
     new HTMLWebpackPlugin({
+        chanks: ['index'],
+        excludeChunks: ['inner'],
         template: PATH.src + 'index.html',
         filename: 'index.html',
         minify: false
     }),
+    new HTMLWebpackPlugin({
+      chanks: ['inner'],
+      excludeChunks: [ 'index' ],
+      template: PATH.src + 'inner.html',
+      filename: 'inner.html',
+      minify: false
+    }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].style.css',
     }),
     new CopyWebpackPlugin({
       patterns: [
