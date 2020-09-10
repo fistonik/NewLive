@@ -1,0 +1,39 @@
+@import "footer";
+@import "social";
+@import "event";
+
+
+
+// --inner временное решения на время перехода
+// на один варинта верстки/дизайна
+
+.footer--inner .button-inner--gray:hover {
+  color: #5080ec;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer.footer--inner {
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  .footer--inner .social__title {
+    margin-bottom: revert;
+
+  }
+
+  .footer--inner .social__title::after {
+    content: none;
+  }
+
+  .footer--inner .social__list {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer.footer--inner {
+    margin-top: 70px;
+  }
+}

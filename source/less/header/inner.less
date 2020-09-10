@@ -1,0 +1,35 @@
+@import "header";
+@import "hamburger";
+@import "menu";
+@import "search";
+
+// --inner временное решения на время перехода
+// на один варинта верстки/дизайна
+
+
+
+@media (max-width: 768px) {
+  .header.header--inner {
+    box-sizing: content-box;
+  }
+
+  .header--inner .header__wrapper {
+    padding: 0;
+    width: auto;
+  }
+
+  .header--inner .menu {
+    height: calc(100% - 30px);
+    padding-bottom: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page--fixed-header--inner {
+    padding-top: 130px !important;
+  }
+
+  .header--inner {
+    height: 155px;
+  }
+}
