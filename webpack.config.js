@@ -42,7 +42,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, PATH.build),
     watchContentBase: true,
-    // host: '192.168.31.8', // ip workstation
+    host: '192.168.31.8', // ip workstation
     // disableHostCheck: true,
   },
   optimization: optimization(),

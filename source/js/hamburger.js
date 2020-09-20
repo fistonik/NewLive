@@ -19,6 +19,7 @@ const toggleClass = (element, cls) => {
   }
 };
 
+
 const hamburgerClickHandler = function () {
   toggleClass(headerElement, `header--menu-open`);
   headerElement.classList.remove(`header--visibility`);
@@ -87,3 +88,5 @@ window.addEventListener(`scroll`, () => {
     }
   }
 });
+
+scrollBy(0, 1); // Делаем минимальную прокрутку для активации меню

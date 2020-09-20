@@ -30,6 +30,7 @@ if (window.innerWidth < 768) {
     for (let i = 3; i < specialists.length; i++) {
       specialists[i].style.display = `block`;
     }
+    specialistsMoreBtn.remove();
   });
 }
 

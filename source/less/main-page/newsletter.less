@@ -4,6 +4,15 @@
   position: relative;
 }
 
+.newsletter--inner::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  height: 1px;
+  background-color: #ff7e33;
+}
+
 .newsletter::after {
   content: "";
   position: absolute;
@@ -39,6 +48,14 @@
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.005em;
+}
+
+.newsletter__discription a {
+  color: #274EA5;
+}
+
+.newsletter__discription a:hover {
+  color: #ff7e33;
 }
 
 .newsletter__discription--indent {
@@ -136,5 +153,9 @@
   .newsletter {
     padding-top: 98px;
     padding-bottom: 181px;
+  }
+
+  .newsletter--inner::before {
+    top: 30px;
   }
 }
