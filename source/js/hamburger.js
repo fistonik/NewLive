@@ -27,10 +27,10 @@ const hamburgerClickHandler = function () {
   if (searchElement.classList.contains(`search--open`)) {
     toggleClass(searchElement, `search--open`);
   }
-  if (window.innerWidth > 1280) {
+  if (window.innerWidth >= 1280) {
     toggleClass(headerTitleElement, `opacity`);
   }
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 1280) {
     toggleClass(searchElement, `search--mobile-show`);
   }
 };
@@ -59,9 +59,7 @@ window.addEventListener(`scroll`, () => {
   }
 
 
-  if (window.innerWidth < 768) {
-
-
+  if (window.innerWidth < 1280) {
     if (opacity === 0) {
       headerElement.classList.add(`header--shadow`);
     } else {
@@ -84,6 +82,9 @@ window.addEventListener(`scroll`, () => {
     if (window.scrollY > 0) {
       headerElement.classList.add(`header--shadow`);
     } else {
+      if (window.scrollY > 65) {
+        headerElement.style.height = `50px`;
+      }
       headerElement.classList.remove(`header--shadow`);
     }
   }
